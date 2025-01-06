@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import User from "../components/User.jsx"
 
+
 function Home() {
   const [users, setUsers] = useState([]);
 
   async function fetchUsers() {
     const { data } = await axios.get(
-      "https://jsonplaceholder.typicode.com/users"
+      "https://jsonplaceholder.typicode.com/id"
     );
     setUsers(data);
     console.log(data);
@@ -18,7 +19,6 @@ function Home() {
     }, 500);
   }, []);
 
-  const pxs = "3px";
 
   return (
     <div>
