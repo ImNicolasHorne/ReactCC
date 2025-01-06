@@ -1,14 +1,23 @@
 import React from "react"
 
-function User(id, name, email, username) {
-  return (
-    <div style={{ Borders: `2px solid black` }}>
-      <div>{id}</div>
-      <div>{name}</div>
-      <div>{email}</div>
-      <div>{username}</div>
-    </div>
-  );
+function User({ user }){
+
+return (
+
+<div>
+
+<h2>{user.name}</h2>
+
+<p>Email: {user.email}</p>
+
+<p>Username: {user.username}</p>
+
+<p>Phone: {user.phone}</p>
+
+</div>
+
+)
+
 }
 
 export default User
