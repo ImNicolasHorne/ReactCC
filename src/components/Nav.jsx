@@ -7,7 +7,7 @@ function Nav(){
             <Link to = "/">Home</Link>
             <Link to="/users/ronaldo">Ronaldo</Link>
             <Link to="/users/messi">Messi</Link>
-            <Link to = "/usesrs/nclshorne">Niccy H</Link>
+            <Link to = "/users/nclshorne">Nicolas</Link>
         </nav>
     )
 }
