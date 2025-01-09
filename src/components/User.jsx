@@ -4,7 +4,7 @@ function User({ user }){
 
 return (
 
-<div>
+<div style={{border: `10px solid black`}}>
 
 <h2>{user.name}</h2>
 

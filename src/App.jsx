@@ -1,20 +1,19 @@
 import React from 'react'
 
 import "./App.css";
-import { Routes, Route, } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import Home from "./pages/Home";
 import Nav from "./components/Nav"
 import Users from "./pages/Users"
 
 function App() {
   return (
-      <>
-        <Nav />
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users/:id" element={<Users />} />
         </Routes>
-      </>
+      </Router>
   );
 }
 
